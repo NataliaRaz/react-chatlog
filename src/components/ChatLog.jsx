@@ -2,7 +2,7 @@
 import ChatEntry from './ChatEntry';
 import './ChatLog.css';
 
-const ChatLog = ({ entries, onToggleLike }) => {
+const ChatLog = ({ entries, onToggleLike, localSender }) => {
   return (
     <div className="chat-log">
       {entries.map((entry) => (
@@ -14,6 +14,7 @@ const ChatLog = ({ entries, onToggleLike }) => {
           timeStamp={entry.timeStamp}
           liked={entry.liked}
           onToggleLike={onToggleLike}
+          isLocal={entry.sender === localSender}
         />
       ))}
     </div>

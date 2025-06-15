@@ -18,6 +18,7 @@ const App = () => {
   };
 
   const totalLikes = entries.filter((entry) => entry.liked).length;
+  const localSender = "Vladimir";
 
   return (
     <div id="App">
@@ -26,7 +27,8 @@ const App = () => {
         <p>{totalLikes} ❤️s</p>
       </header>
       <main>
-        <ChatLog entries={entries} onToggleLike={toggleLike} />
+        <ChatLog entries={entries} onToggleLike={toggleLike} localSender={localSender}
+/>
       </main>
     </div>
   );
