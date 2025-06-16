@@ -12,7 +12,7 @@ return (
       <p className="entry-time"><TimeStamp time={timeStamp} /></p>
       {/* <button className="like-button" onClick={() => onToggleLike(id)}> */}
        <button
-          className="like-button"
+          className="like"
           data-testid={`like-button-${id}`}
           onClick={() => onToggleLike(id)}
         >
