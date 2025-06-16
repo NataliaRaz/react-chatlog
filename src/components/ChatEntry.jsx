@@ -10,7 +10,12 @@ return (
     <section className="entry-bubble">
       <p>{body}</p>
       <p className="entry-time"><TimeStamp time={timeStamp} /></p>
-      <button className="like-button" onClick={() => onToggleLike(id)}>
+      {/* <button className="like-button" onClick={() => onToggleLike(id)}> */}
+       <button
+          className="like-button"
+          data-testid={`like-button-${id}`}
+          onClick={() => onToggleLike(id)}
+        >
         {heart}
       </button>
     </section>
