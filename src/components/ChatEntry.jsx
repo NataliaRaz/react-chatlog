@@ -1,5 +1,3 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
 import TimeStamp from './TimeStamp';
 import './ChatEntry.css';
 
@@ -21,11 +19,3 @@ return (
 };
 
 export default ChatEntry;
-
-// ChatEntry.propTypes = {
-//   sender: PropTypes.string.isRequired,
-//   body: PropTypes.string.isRequired,
-//   timeStamp: PropTypes.string.isRequired,
-// };
-
-// export default ChatEntry;
